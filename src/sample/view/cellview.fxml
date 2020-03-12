@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="cellPane" prefHeight="71.0" prefWidth="350.0" style="-fx-background-color: #4fc3f7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="5.0" layoutY="4.0" prefHeight="64.0" prefWidth="341.0" style="-fx-background-color: #ffff;">
+         <children>
+            <Label layoutX="10.0" layoutY="5.0" prefHeight="17.0" prefWidth="45.0" stylesheets="@../style.css" />
+            <Label layoutX="14.0" layoutY="6.0" text="Task Id" textFill="#4e6df5" />
+            <Label fx:id="taskId" layoutX="63.0" layoutY="6.0" text="11" textFill="#615aee" />
+            <Label layoutX="92.0" layoutY="5.0" prefHeight="19.0" prefWidth="31.0" stylesheets="@../style.css" />
+            <Label layoutX="95.0" layoutY="6.0" text="Task" textFill="#615aee" />
+            <Label fx:id="task" layoutX="132.0" layoutY="6.0" prefHeight="17.0" prefWidth="165.0" textFill="#615aee" />
+            <Label layoutX="10.0" layoutY="29.0" prefHeight="19.0" prefWidth="68.0" stylesheets="@../style.css" />
+            <Label layoutX="14.0" layoutY="30.0" text="Description" textFill="#615aee" />
+            <Label fx:id="description" layoutX="92.0" layoutY="29.0" prefHeight="19.0" prefWidth="205.0" textFill="#615aee" />
+            <Label fx:id="time" alignment="CENTER_RIGHT" layoutX="227.0" layoutY="48.0" opacity="0.37" prefHeight="10.0" prefWidth="106.0" text="jh22/22/33" textFill="#615aee" />
+            <ImageView fx:id="taskDeleteButton" fitHeight="19.0" fitWidth="13.0" layoutX="324.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-delete-26.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="taskUpdateButton" fitHeight="19.0" fitWidth="13.0" layoutX="324.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-update-24.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

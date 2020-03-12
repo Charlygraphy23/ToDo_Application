@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="userdetailsPane" prefHeight="499.0" prefWidth="840.0" style="-fx-background-color: #ffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.UserDetailsController">
+   <children>
+      <Label layoutX="52.0" layoutY="72.0" opacity="0.7" prefHeight="26.0" prefWidth="44.0" stylesheets="@../style.css">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="131.0" opacity="0.7" prefHeight="26.0" prefWidth="61.0" stylesheets="@../style.css">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="184.0" opacity="0.7" prefHeight="26.0" prefWidth="53.0" stylesheets="@../style.css">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="250.0" opacity="0.7" prefHeight="26.0" prefWidth="90.0" stylesheets="@../style.css">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutY="-2.0" prefHeight="32.0" prefWidth="840.0" style="-fx-background-color: #4dd0e1;" />
+      <Label alignment="CENTER" layoutX="311.0" layoutY="1.0" prefHeight="26.0" prefWidth="218.0" text="User Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="loginName" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="608.0" layoutY="1.0" prefHeight="26.0" prefWidth="218.0" text="User" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="131.0" opacity="0.7" prefHeight="26.0" prefWidth="44.0" text="Name">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="72.0" opacity="0.7" prefHeight="26.0" prefWidth="44.0" text="Id">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="369.0" layoutY="197.0" opacity="0.7" prefHeight="26.0" prefWidth="90.0" text="User Name">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="391.0" layoutY="116.0" opacity="0.7" prefHeight="26.0" prefWidth="80.0" text="Gender">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="184.0" opacity="0.7" prefHeight="26.0" prefWidth="33.0" text="Mail">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="250.0" opacity="0.7" prefHeight="26.0" prefWidth="80.0" text="Mobile No">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="623.0" layoutY="53.0" opacity="0.7" prefHeight="182.0" prefWidth="168.0" stylesheets="@../style.css">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="image" fitHeight="163.0" fitWidth="147.0" layoutX="634.0" layoutY="63.0" pickOnBounds="true" />
+      <Separator layoutY="352.0" prefHeight="1.0" prefWidth="840.0" />
+      <JFXTextField fx:id="id" editable="false" focusColor="#2f98d0" layoutX="114.0" layoutY="69.0" prefHeight="32.0" prefWidth="53.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="374.0" layoutY="116.0" opacity="0.7" prefHeight="26.0" prefWidth="80.0" stylesheets="@../style.css">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="354.0" layoutY="197.0" opacity="0.7" prefHeight="26.0" prefWidth="105.0" stylesheets="@../style.css">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="name" editable="false" focusColor="#2f98d0" layoutX="114.0" layoutY="126.0" prefHeight="32.0" prefWidth="218.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="mail" editable="false" focusColor="#2f98d0" layoutX="114.0" layoutY="181.0" prefHeight="32.0" prefWidth="218.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="mobileno" editable="false" focusColor="#2f98d0" layoutX="114.0" layoutY="247.0" prefHeight="32.0" prefWidth="218.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="gender" editable="false" focusColor="#2f98d0" layoutX="471.0" layoutY="110.0" prefHeight="32.0" prefWidth="127.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="username" editable="false" focusColor="#2f98d0" layoutX="474.0" layoutY="194.0" prefHeight="32.0" prefWidth="134.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fx:id="backButton" fitHeight="26.0" fitWidth="21.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-back-arrow-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="addTask" fitHeight="44.0" fitWidth="53.0" layoutX="385.0" layoutY="389.0" opacity="0.73" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-add-50.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="redDotBackground" layoutX="409.0" layoutY="249.0" prefHeight="3.0" prefWidth="40.0" text="." textFill="#f55757" visible="false">
+         <font>
+            <Font name="System Bold" size="145.0" />
+         </font>
+      </Label>
+      <Label fx:id="countTask" alignment="CENTER" layoutX="419.0" layoutY="379.0" prefHeight="32.0" prefWidth="21.0" text="2" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
