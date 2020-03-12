@@ -6,9 +6,11 @@ import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
 
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.control.Alert;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 import sample.Animation.ReverseHalfSlideAnimation;
 import sample.database.DatabaseHandler;
 import sample.model.Task;

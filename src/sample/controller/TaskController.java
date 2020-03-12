@@ -88,6 +88,8 @@ public class TaskController {
 
 
 
+
+
         ResultSet resultSet=null;
         DatabaseHandler handler=new DatabaseHandler();
         resultSet=handler.getTask();
@@ -123,7 +125,7 @@ public class TaskController {
             Alert alert =new Alert(Alert.AlertType.INFORMATION);
             alert.setContentText("Task Added Successful");
             alert.show();
-
+            initialize();
             clearAll();
         }else {
             Alert alert =new Alert(Alert.AlertType.ERROR);
@@ -143,4 +145,5 @@ public class TaskController {
         reverseAnimation.play();
         taskPane.getChildren().setAll(root);
     }
+
 }

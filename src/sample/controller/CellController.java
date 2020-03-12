@@ -65,13 +65,14 @@ public class CellController extends JFXListCell<Task> {
                     e.printStackTrace();
                 }
             }
-            tskId=tsk.getTaskid();
+
             taskId.setText(String.valueOf(tsk.getTaskid()));
             task.setText(tsk.getTask());
             description.setText(tsk.getDescription());
             time.setText(tsk.getDatecreated().toString());
 
             taskDeleteButton.setOnMouseClicked(e->{
+                tskId=getListView().getSelectionModel().getSelectedItem().getTaskid();
                 DatabaseHandler handler=new DatabaseHandler();
                 try {
                     handler.deleteTask(tsk);
@@ -85,6 +86,7 @@ public class CellController extends JFXListCell<Task> {
             });
 
             taskUpdateButton.setOnMouseClicked(e->{
+                tskId=getListView().getSelectionModel().getSelectedItem().getTaskid();
                 Parent root= null;
                 try {
                     root =FXMLLoader.load(getClass().getResource("/sample/view/updatetaskview.fxml"));
